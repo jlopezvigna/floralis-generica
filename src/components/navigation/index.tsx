@@ -1,7 +1,6 @@
 import { tw } from 'twind';
 import React, { useMemo } from 'react';
 import { MD } from '@/constants/breakpoint';
-import links from '@/constants/navigationLinks';
 import useWindowSize from '@/hooks/useWindowSize';
 import useToggle from '@/hooks/useToggle';
 import clsx from 'clsx';
@@ -27,7 +26,7 @@ const Navigation = ({ onClick, scrollDirection, top }: INavigation) => {
   return (
     <nav
       className={clsx(
-        tw(`bg-white z-50	fixed top-0 left-0 right-0 delay-300 transition-all`),
+        tw(`bg-white z-50	fixed top-0 left-0 right-0 delay-75 transition-all`),
         {
           [tw(`-top-20`)]: scrollDirection === `up` && top * -1 > 80 && !showMenu,
         },
@@ -37,7 +36,13 @@ const Navigation = ({ onClick, scrollDirection, top }: INavigation) => {
       <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
         <div className={tw(`flex items-center h-20`)}>
           <div className={tw(`flex-shrink-0`)}>
-            <img className={tw(`h-16 w-16`)} src="/images/logo.png" alt="logo" width={56} height={65} />
+            <img
+              className={tw(`lg:h-13 lg:w-13 lg:h-16 lg:w-16`)}
+              src="/images/logo.png"
+              alt="logo"
+              width={56}
+              height={65}
+            />
           </div>
           <div className={tw(`flex items-center flex-grow justify-end z-50`)}>
             <Hamburger toggled={showMenu} toggle={toggleMenu} size={isMobile ? 20 : 24} rounded color="#0a222c" />
