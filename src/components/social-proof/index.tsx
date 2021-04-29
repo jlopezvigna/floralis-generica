@@ -4,17 +4,17 @@ import Quote from '@/constants/svg/quote.svg';
 
 const socialProofs = [
   {
-    name: `John Doe`,
-    company: `Alphabet Inc.`,
-    image: `/images/social-1.webp`,
+    name: `COO`,
+    company: `Floralis Generica Corp.`,
+    image: `/images/male_user.png`,
     text: `Commodo Lorem consequat ea consectetur pariatur proident excepteur.
     Pariatur eiusmod minim minim ipsum tempor aute excepteur minim eu nisi laboris.
     Duis sunt labore eu eu cupidatat labore commodo id aliquip.`,
   },
   {
-    name: `Jack Doe`,
-    company: `Amazon.com, Inc.`,
-    image: `/images/social-2.webp`,
+    name: `CEO`,
+    company: `Floralis Generica Corp.`,
+    image: `/images/female_user.png`,
     text: `Anim labore ut amet cupidatat pariatur pariatur labore ad est.
     Fugiat eiusmod dolore aliquip aute duis esse excepteur amet.
     Sit cupidatat ipsum culpa nisi esse ipsum culpa in consectetur.

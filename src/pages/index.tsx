@@ -1,31 +1,72 @@
 import { NextSeo } from 'next-seo';
-import Page from '@/components/page';
 import Header from '@/components/header';
-import VideoSection from '@/components/video-section';
-import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
-import CasesSection from '@/components/cases-section';
-import SocialProof from '@/components/social-proof';
-import PricingTable from '@/components/pricing-table';
+import GetInTouch from '@/components/get-in-touch';
 import Footer from '@/components/footer';
+import { Element, scroller } from 'react-scroll';
+import Head from 'next/head';
+import Navigation from '@/components/navigation';
+import { tw } from 'twind';
+import SocialProof from '@/components/social-proof';
+import { useState } from 'react';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 export default function Home() {
+  const scrollTo = (element: string) => {
+    scroller.scrollTo(element, {
+      duration: 800,
+      delay: 0,
+      smooth: `easeInOutQuart`,
+    });
+  };
+
+  const handleLinkClick = (section: string) => {
+    scrollTo(section);
+  };
+
+  const [hideOnScroll, setHideOnScroll] = useState({ direction: `up`, top: 0 });
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const direction = currPos.y > prevPos.y ? `down` : `up`;
+      setHideOnScroll({ direction, top: currPos.y });
+    },
+    [hideOnScroll],
+    undefined,
+    false,
+    300,
+  );
+
   return (
-    <Page>
-      <NextSeo
-        title="STARTD - Template"
-        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
-      />
-      <Header />
-      <main>
-        <VideoSection />
-        <ListSection />
-        <FeatureSection />
-        <CasesSection />
-        <SocialProof />
-        <PricingTable />
-      </main>
-      <Footer />
-    </Page>
+    <div>
+      <Head>
+        <link rel="icon" href="/logo.svg" />
+      </Head>
+      <Element name="header-section" />
+
+      <div className={tw(`min-h-screen flex flex-col overflow-auto`)}>
+        <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} onClick={handleLinkClick} />
+        <NextSeo
+          title="Floralis Generica | IT Services"
+          description="A TypeScript/Next.js theme that includes everything you need to build amazing landing div!"
+        />
+        <div className={tw(`my-20`)}>
+          <Header onClick={() => handleLinkClick(`get-in-touch-section`)} />
+
+          <main>
+            <Element name="feature-section">
+              <FeatureSection />
+            </Element>
+            <Element name="testimonials-section">
+              <SocialProof />
+            </Element>
+
+            <Element name="get-in-touch-section">
+              <GetInTouch />
+            </Element>
+          </main>
+          <Footer onClick={handleLinkClick} />
+        </div>
+      </div>
+    </div>
   );
 }

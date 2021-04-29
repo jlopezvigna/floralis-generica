@@ -1,81 +1,70 @@
 import { tw } from 'twind';
-import Button from '@/components/button';
+import Facebook from '@/constants/svg/facebook.svg';
+import Linkedin from '@/constants/svg/linkedin.svg';
+import SocialLink from '@/components/social-link';
+import navigationLinks from '@/constants/navigationLinks';
+import serviceLinks from '@/constants/serviceLinks';
 
-const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
-const aboutLinks = [`About Us`, `Careers`, `Leadership`, `Blog`, `Events`, `Press`];
-const resourceLinks = [
-  `Get started`,
-  `Guides`,
-  `Tools`,
-  `Case studies`,
-  `Solutions`,
-  `FAQs`,
-  `Help Center`,
-  `Training`,
-  `Other resources`,
-];
+interface IFooter {
+  onClick: (x: string) => void;
+}
 
-const Footer = () => (
+const Footer = ({ onClick }: IFooter) => (
   <footer className={tw(`bg-white border-t border-gray-400 pt-14 pb-16`)}>
     <div className={tw(`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`)}>
       <div className={tw(`mb-14 flex items-center w-full`)}>
-        <img className={tw(`h-12 w-12 mr-4`)} src="logo.svg" alt="logo" width={48} height={48} />
-        <p className={tw(`text-4xl text-indigo-500 font-bold`)}>STARTD</p>
+        <img className={tw(`h-12 w-12 mr-4`)} src="/images/logo.png" alt="logo" width={52} height={52} />
+        <p className={tw(`lg:text-4xl text-2xl text-secondary font-bold`)}>Floralis Generica</p>
       </div>
-      <div className={tw(`w-full lg:w-1/2`)}>
+      <div className={tw(`w-full`)}>
         <ul className={tw(`text-lg font-light flex flex-wrap w-full`)}>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
+          <li className={tw(`w-full md:w-1/4 lg:w-1/4 mb-3`)}>
             <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h4>
+              <h4 className={tw(`text-secondary-dark text-base font-bold mb-1`)}>Services</h4>
               <ul>
-                {productLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
+                {serviceLinks.map((link) => (
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link.label}>
+                    <span role="button" aria-hidden="true" tabIndex={0} onClick={() => onClick(link.element)}>
+                      {link.label}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           </li>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
+          <li className={tw(`w-full md:w-1/4 lg:w-1/4 mb-5`)}>
             <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
+              <h4 className={tw(`text-secondary-dark text-base font-bold mb-1`)}>Company</h4>
               <ul>
-                {resourceLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
+                {navigationLinks.map((link) => (
+                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link.label}>
+                    <span role="button" aria-hidden="true" tabIndex={0} onClick={() => onClick(link.element)}>
+                      {link.label}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           </li>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>About Us</h4>
-              <ul>
-                {aboutLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
-                  </li>
-                ))}
-              </ul>
+          <li className={tw(`w-full w-1/2 md:w-1/2 lg:w-1/2 mb-3`)}>
+            <h4 className={tw(`text-secondary-dark text-base font-bold mb-1`)}>Social Media</h4>
+            <div className={tw(`flex`)}>
+              <SocialLink
+                href="https://www.linkedin.com/company/floralis-generica-corp"
+                target="_blank"
+                icon={<Facebook />}
+              />
+              <SocialLink
+                href="https://www.linkedin.com/company/floralis-generica-corp"
+                target="_blank"
+                className={tw(`mx-3`)}
+                icon={<Linkedin />}
+              />
             </div>
           </li>
         </ul>
       </div>
-      <div className={tw(`w-full lg:w-1/2 mt-12 lg:mt-0`)}>
-        <div className={tw(`border border-gray-400 rounded py-5 px-4`)}>
-          <h4 className={tw(`font-mono text-sm uppercase text-gray-500 mb-3`)}>Subscribe our newsletter</h4>
-          <div className={tw(`flex w-full`)}>
-            <input
-              aria-label="email address"
-              type="text"
-              className={tw(`border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`)}
-              placeholder="Enter your email"
-            />
-            <Button>Subscribe</Button>
-          </div>
-        </div>
-      </div>
+      <div className={tw(`w-full text-right text-xs`)}>© 2021 Floralis Generica Corp.</div>
     </div>
   </footer>
 );
