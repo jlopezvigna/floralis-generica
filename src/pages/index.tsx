@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <Element name="header-section" />
 
@@ -47,7 +47,8 @@ export default function Home() {
         <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} onClick={handleLinkClick} />
         <NextSeo
           title="Floralis Generica | IT Services"
-          description="A TypeScript/Next.js theme that includes everything you need to build amazing landing div!"
+          description="IT Services, IT infrastructure engineer, mobile web solutions, 
+          Red hat solutions, asset management software, api management platform, graphql backend"
         />
         <div className={tw(`my-20`)}>
           <Header onClick={() => handleLinkClick(`get-in-touch-section`)} />
