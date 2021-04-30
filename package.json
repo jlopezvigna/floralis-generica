@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "npm run buil && next export && mv out _static",
+    "export": "npm run build && next export && mv out _static",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
