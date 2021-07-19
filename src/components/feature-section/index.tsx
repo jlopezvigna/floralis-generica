@@ -12,61 +12,68 @@ const FeatureSection = () => (
           </p>
         </div>
         <div className={tw(`flex flex-wrap my-12`)}>
-          <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8`)}>
+          <div className={tw(`w-full md:w-1/2  p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>IT Support</div>
+              <div className={tw(`ml-4 text-xl`)}>IT Support & Infrastructure</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Consectetur pariatur irure exercitation sit amet id consectetur consecteturmagna et Lorem labore qui
-              velit.
+              Support on Operating Systems, Databases, Application Servers, Help Desk, Operations and Incident Support.
+              Certified technicians, virtualization, installation, configuration, implementation, high availability,
+              security, support and maintenance.
             </p>
           </div>
-          <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8`)}>
+
+          <div className={tw(`w-full md:w-1/2 md:border-b-0  p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>Mobile & Web Solutions</div>
+              <div className={tw(`ml-4 text-xl`)}>Virtual Wallet</div>
             </div>
-            <p className={tw(`leading-loose text-gray-500 `)}>
-              Labore duis pariatur est exercitation laboris cupidatat amet cillum. Amet nisi ullamco.
+            <p className={tw(`leading-loose text-gray-500`)}>
+              We develop custom applications of &quot;Virtual Wallet&quot; with the ability to manage digital credit
+              cards, prepaid gift cards, different cryptocurrencies and direct access to accounts banking.
             </p>
           </div>
-          <div className={tw(`w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8`)}>
+          <div className={tw(`w-full md:w-1/2 p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
+              <div className={tw(`ml-4 text-xl`)}>Payment Gateway</div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500`)}>
+              Design of the Business Model product of the incorporation of &quot;Means of payment&quot; as a tool to
+              link with your customers, providing: Conceptual design of the process, Necessary functionalities,
+              Implementation plan (MVP and future improvements).
+            </p>
+          </div>
+          <div className={tw(`w-full  md:w-1/2  p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
+              <div className={tw(`ml-4 text-xl`)}>Mobile / Web Solutions & Integrations </div>
+            </div>
+
+            <p className={tw(`leading-loose text-gray-500 `)}>
+              Custom developments, microservices, design, testing and support on systems, analysis, project managers. We
+              define and design the main challenges to adopt an API ecosystem within your company. We survey the quality
+              criteria that the business demands to put together the appropriate strategy.
+            </p>
+          </div>
+          <div className={tw(`w-full md:w-1/2  p-8`)}>
+            <div className={tw(`flex items-center mb-6`)}>
+              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
+              <div className={tw(`ml-4 text-xl`)}>ITSM Solutions / Service Desk and CMDB & Asset Management </div>
+            </div>
+            <p className={tw(`leading-loose text-gray-500`)}>
+              Help Desk and CMDB & Asset Management solutions designed to optimize IT service delivery and support.
+            </p>
+          </div>
+          <div className={tw(`w-full md:w-1/2 p-8`)}>
             <div className="flex items-center mb-6">
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>IT Infrastructure</div>
+              <div className={tw(`ml-4 text-xl`)}>Red Hat Suite Cloud and On Premise</div>
             </div>
             <p className={tw(`leading-loose text-gray-500`)}>
-              Elit deserunt nisi esse duis cupidatat proident sit minim mollit officia pariatur incididunt in tempor.
-            </p>
-          </div>
-          <div className={tw(`w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8`)}>
-            <div className={tw(`flex items-center mb-6`)}>
-              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>Red Hat Cloud Suite</div>
-            </div>
-            <p className={tw(`leading-loose text-gray-500`)}>
-              Velit sit tempor pariatur quis pariatur incididunt culpa dolor voluptate officia incididunt velit dolore.
-            </p>
-          </div>
-          <div className={tw(`w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8`)}>
-            <div className={tw(`flex items-center mb-6`)}>
-              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>Asset Management Solutions</div>
-            </div>
-            <p className={tw(`leading-loose text-gray-500`)}>
-              Laboris elit consectetur sint nisi eu mollit proident sit magna velit adipisicing consequat amet
-              reprehenderit.
-            </p>
-          </div>
-          <div className={tw(`w-full md:w-1/2 lg:w-1/3 p-8`)}>
-            <div className={tw(`flex items-center mb-6`)}>
-              <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-primary-light`)} />
-              <div className={tw(`ml-4 text-xl`)}>API Management </div>
-            </div>
-            <p className={tw(`leading-loose text-gray-500`)}>
-              Nostrud excepteur incididunt proident sit nulla ipsum sunt nostrud est esse adipisicing irure officia
-              consectetur.
+              Comprehensive solutions for your business, consulting, advice, installation, configuration and training on
+              RedHat platform tools.
             </p>
           </div>
         </div>
