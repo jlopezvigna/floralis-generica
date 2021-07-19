@@ -3,9 +3,9 @@ export default [
     name: `COO`,
     company: `Floralis Generica Corp.`,
     image: `/images/male_user.png`,
-    text: `Commodo Lorem consequat ea consectetur pariatur proident excepteur.
-      Pariatur eiusmod minim minim ipsum tempor aute excepteur minim eu nisi laboris.
-      Duis sunt labore eu eu cupidatat labore commodo id aliquip.`,
+    text: `We choose to innovate and we are dedicated to researching 
+    emerging technologies to accompany and help our clients to adopt comprehensive solutions, 
+    choosing the best options for digital transformation.`,
   },
   {
     name: `CEO`,
