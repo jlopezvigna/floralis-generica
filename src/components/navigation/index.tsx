@@ -1,27 +1,29 @@
-import { tw } from 'twind';
-import React, { useMemo } from 'react';
 import { MD } from '@/constants/breakpoint';
-import useWindowSize from '@/hooks/useWindowSize';
+import useLinkScroll from '@/hooks/useLinkScroll';
 import useToggle from '@/hooks/useToggle';
+import useWindowSize from '@/hooks/useWindowSize';
+import Link from '@/types/link-type';
 import clsx from 'clsx';
 import Hamburger from 'hamburger-react';
+import React, { useMemo } from 'react';
+import { tw } from 'twind';
 import MobileMenu from '../mobile-menu';
 
 interface INavigation {
-  onClick: (x: string) => void;
   scrollDirection: string;
   top: number;
 }
 
-const Navigation = ({ onClick, scrollDirection, top }: INavigation) => {
+const Navigation = ({ scrollDirection, top }: INavigation) => {
   const [showMenu, toggleMenu] = useToggle(false);
   const size = useWindowSize();
+  const { move } = useLinkScroll();
 
   const isMobile: boolean = useMemo(() => MD > size.width, [size]);
 
-  const handleClick = (section: string) => {
+  const handleClick = (link: Link) => {
     toggleMenu();
-    onClick(section);
+    move(link);
   };
   return (
     <nav

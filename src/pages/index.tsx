@@ -1,29 +1,17 @@
-import { NextSeo } from 'next-seo';
-import Header from '@/components/header';
 import FeatureSection from '@/components/feature-section';
-import GetInTouch from '@/components/get-in-touch';
 import Footer from '@/components/footer';
-import { Element, scroller } from 'react-scroll';
-import Head from 'next/head';
+import GetInTouch from '@/components/get-in-touch';
+import Header from '@/components/header';
 import Navigation from '@/components/navigation';
-import { tw } from 'twind';
 import SocialProof from '@/components/social-proof';
-import { useState } from 'react';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import { NextSeo } from 'next-seo';
+import Head from 'next/head';
+import { useState } from 'react';
+import { Element } from 'react-scroll';
+import { tw } from 'twind';
 
 export default function Home() {
-  const scrollTo = (element: string) => {
-    scroller.scrollTo(element, {
-      duration: 800,
-      delay: 0,
-      smooth: `easeInOutQuart`,
-    });
-  };
-
-  const handleLinkClick = (section: string) => {
-    scrollTo(section);
-  };
-
   const [hideOnScroll, setHideOnScroll] = useState({ direction: `up`, top: 0 });
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -44,14 +32,14 @@ export default function Home() {
       <Element name="header-section" />
 
       <div className={tw(`min-h-screen flex flex-col overflow-auto`)}>
-        <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} onClick={handleLinkClick} />
+        <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} />
         <NextSeo
           title="Floralis Generica | IT Services"
           description="IT Services, IT infrastructure engineer, mobile web solutions, 
           Red hat solutions, asset management software, api management platform, graphql backend"
         />
         <div className={tw(`my-20`)}>
-          <Header onClick={() => handleLinkClick(`get-in-touch-section`)} />
+          <Header />
 
           <main>
             <Element name="feature-section">
@@ -65,7 +53,7 @@ export default function Home() {
               <GetInTouch />
             </Element>
           </main>
-          <Footer onClick={handleLinkClick} />
+          <Footer />
         </div>
       </div>
     </div>
