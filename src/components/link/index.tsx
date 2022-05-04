@@ -13,7 +13,7 @@ interface ILink {
 }
 
 const Link = ({ component, children, ...rest }: ILink) => {
-  const Component = component || `a`;
+  const Component: any = component || `a`;
   return (
     <Component className={tw(linkStyle, `hover:underline`)} {...rest}>
       {children}
