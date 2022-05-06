@@ -16,6 +16,14 @@ const img = css`
   background-size: cover;
 `;
 
+const banner = css`
+  background: url('/images/blog/wallet-banner.png');
+  background-size: contain;
+  height: 600px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+`;
+
 const ul = css`
   list-style: circle;
   margin: 0 24px;
@@ -125,6 +133,9 @@ export default function VirtualWallets() {
                       </li>
                     </ul>
                   </p>
+                  <div className={tw(`my-4`)}>
+                    <div className={tw(banner)} />
+                  </div>
                   <h3 className={tw(`text-xl font-bold my-4`)}>Your customers, your brand ambassadors</h3>
                   We want to emphasize that virtual wallets are an effective tool to achieve greater customer loyalty.
                   Since, through the facilities provided, it is possible to strengthen the commercial relationship. In
