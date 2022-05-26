@@ -63,9 +63,9 @@ export default function Devops() {
         />
         <div className={tw(`my-20`)}>
           <div className={tw(`m-12 text-center`)}>
-            <p className={tw(`text-5xl lg:text-7xl font-bold tracking-tight text-secondary`)}>
+            <h1 className={tw(`text-5xl lg:text-7xl font-bold tracking-tight text-secondary`)}>
               Avoid obstacles between IT teams with DevOps
-            </p>
+            </h1>
           </div>
 
           <main>
