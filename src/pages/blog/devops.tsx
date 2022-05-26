@@ -50,26 +50,25 @@ export default function Devops() {
     <div>
       <Head>
         <link rel="icon" href="/images/logo.png" />
-        <meta property="og:title" content="Avoid obstacles between IT teams with DevOps" />
-        <meta property="og:image" content="/images/blog/devops-banner.png" />
-        <meta
-          property="og:description"
-          content="DevOps represents a philosophy based on automation and collaboration with the main objective
-          of delivering high business value. 
-          This process involves legacy infrastructures with newer ones built in the cloud."
-        />
-        <meta property="og:url" content="https://floralisgenerica.com/blog/devops/" />
       </Head>
+
+      <NextSeo
+        title="Floralis Generica | Avoid obstacles between IT teams with DevOps"
+        description="DevOps represents a philosophy based on automation and collaboration with
+          the main objective of delivering high business value.
+          This process involves legacy infrastructures with newer ones built in the cloud."
+        openGraph={{
+          title: `Avoid obstacles between IT teams with DevOps`,
+          // eslint-disable-next-line max-len
+          description: `DevOps represents a philosophy based on automation and collaboration with the main objective of delivering high business value. This process involves legacy infrastructures with newer ones built in the cloud.`,
+          url: `https://floralisgenerica.com/blog/devops/`,
+        }}
+      />
       <Element name="header-section" />
 
       <div className={tw(`min-h-screen flex flex-col overflow-auto`)}>
         <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} />
-        <NextSeo
-          title="Floralis Generica | Avoid obstacles between IT teams with DevOps"
-          description="DevOps represents a philosophy based on automation and collaboration with
-          the main objective of delivering high business value.
-          This process involves legacy infrastructures with newer ones built in the cloud."
-        />
+
         <div className={tw(`my-20`)}>
           <div className={tw(`m-12 text-center`)}>
             <h1 className={tw(`text-5xl lg:text-7xl font-bold tracking-tight text-secondary`)}>
