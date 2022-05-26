@@ -57,8 +57,9 @@ export default function Devops() {
         <Navigation scrollDirection={hideOnScroll.direction} top={hideOnScroll.top} />
         <NextSeo
           title="Floralis Generica | Avoid obstacles between IT teams with DevOps"
-          description="DevOps representa una filosofía basada en la automatización y
-           la colaboración con el principal objetivo de ofrecer un alto valor empresarial."
+          description="DevOps represents a philosophy based on automation and collaboration with
+          the main objective of delivering high business value.
+          This process involves legacy infrastructures with newer ones built in the cloud."
         />
         <div className={tw(`my-20`)}>
           <div className={tw(`m-12 text-center`)}>
@@ -74,9 +75,9 @@ export default function Devops() {
 
                 <div className={tw(`my-6`)}>
                   <p className={tw(`text-l my-4`)}>
-                    DevOps representa una filosofía basada en la automatización y la colaboración con el principal
-                    objetivo de ofrecer un alto valor empresarial. Este proceso implica la vinculación de
-                    infraestructuras heredadas con las más nuevas desarrolladas en la nube.
+                    DevOps represents a philosophy based on automation and collaboration with the main objective of
+                    delivering high business value. This process involves legacy infrastructures with newer ones built
+                    in the cloud.
                   </p>
                   <p className={tw(`text-l my-4`)}>
                     Below we will tell you what this practice specifically consists of and what are the benefits of

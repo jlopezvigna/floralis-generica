@@ -7,6 +7,8 @@ module.exports = {
 
     return config;
   },
+  trailingSlash: true,
+  exportTrailingSlash: true,
   async rewrites() {
     return [
       {
