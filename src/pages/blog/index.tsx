@@ -59,11 +59,13 @@ export default function Blog() {
                     role="button"
                     aria-hidden="true"
                     className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/virtual-wallets`)}
+                    onClick={() => goToBlogDetails(`/blog/Automation-a-fundamental-tool-for-your-Company`)}
                   >
-                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/wallet.jpeg" alt="logo" />
+                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/automation.jpg" alt="logo" />
                     <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>Virtual wallets: the key to B2B commerce </div>
+                      <div className={tw(`text-l hover:underline`)}>
+                        Automation, a fundamental tool for your Company.
+                      </div>
                     </div>
                   </div>
 
@@ -76,6 +78,18 @@ export default function Blog() {
                     <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/devops.jpg" alt="logo" />
                     <div className={tw(`flex items-center mb-6`)}>
                       <div className={tw(`text-l hover:underline`)}>Avoid obstacles between IT teams with DevOps</div>
+                    </div>
+                  </div>
+
+                  <div
+                    role="button"
+                    aria-hidden="true"
+                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
+                    onClick={() => goToBlogDetails(`/blog/virtual-wallets`)}
+                  >
+                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/wallet.jpeg" alt="logo" />
+                    <div className={tw(`flex items-center mb-6`)}>
+                      <div className={tw(`text-l hover:underline`)}>Virtual wallets: the key to B2B commerce</div>
                     </div>
                   </div>
                 </div>

@@ -24,15 +24,6 @@ const banner = css`
   background-repeat: no-repeat;
 `;
 
-const ul = css`
-  list-style: circle;
-  margin: 0 24px;
-  li {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-`;
-
 export default function Devops() {
   const [hideOnScroll, setHideOnScroll] = useState({ direction: `up`, top: 0 });
   useScrollPosition(
