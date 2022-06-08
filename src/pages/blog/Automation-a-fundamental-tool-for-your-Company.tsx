@@ -111,8 +111,8 @@ export default function Automation() {
                       <li>Technologies to develop, for example: containers.</li>
                       <li>Work methodologies, such as DevOps.</li>
                       <li>
-                        Accelerating financial inclusion: extends financial services to the base of the pyramid through
-                        mobile devices.
+                        Areas of work: cloud, edge computing, security, testing and monitoring or alerts are some of the
+                        examples where automation can be an invaluable asset.
                       </li>
                     </ul>
                   </p>
