@@ -59,6 +59,18 @@ export default function Blog() {
                     role="button"
                     aria-hidden="true"
                     className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
+                    onClick={() => goToBlogDetails(`/blog/why-implement-an-ITSM-strategy`)}
+                  >
+                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/itsm.jpg" alt="logo" />
+                    <div className={tw(`flex items-center mb-6`)}>
+                      <div className={tw(`text-l hover:underline`)}>Why implement an ITSM strategy?</div>
+                    </div>
+                  </div>
+
+                  <div
+                    role="button"
+                    aria-hidden="true"
+                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
                     onClick={() => goToBlogDetails(`/blog/Automation-a-fundamental-tool-for-your-Company`)}
                   >
                     <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/automation.jpg" alt="logo" />
