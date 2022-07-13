@@ -182,10 +182,6 @@ export default function RegulationsInVirtualWallets() {
                       Contact us!
                     </Link>
                   </p>
-                  <p className={tw(`text-l my-4`)}>
-                    We have a team of developers with extensive experience in creating virtual wallets. Our clients
-                    trust our services because we work with trust and transparency.
-                  </p>
                 </div>
               </div>
             </div>
