@@ -1,21 +1,37 @@
-import { NextSeo } from 'next-seo';
-import Header from '@/components/header';
-import FeatureSection from '@/components/feature-section';
-import GetInTouch from '@/components/get-in-touch';
 import Footer from '@/components/footer';
-import { Element, scroller } from 'react-scroll';
-import Head from 'next/head';
 import Navigation from '@/components/navigation';
-import { tw } from 'twind';
-import SocialProof from '@/components/social-proof';
-import Check from '@/constants/svg/check.svg';
-
-import { useState } from 'react';
-import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import Title from '@/components/title';
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import fs from 'fs';
+import matter from 'gray-matter';
+import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
+import { Element } from 'react-scroll';
+import { tw } from 'twind';
 
-export default function Blog() {
+export async function getStaticProps() {
+  const files = fs.readdirSync(`posts`);
+
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace(`.md`, ``);
+    const readFile = fs.readFileSync(`posts/${fileName}`, `utf-8`);
+    const { data: frontmatter } = matter(readFile);
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+export default function BlogList({ posts }: { posts: [any] }) {
   const router = useRouter();
 
   const [hideOnScroll, setHideOnScroll] = useState({ direction: `up`, top: 0 });
@@ -55,71 +71,29 @@ export default function Blog() {
             <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
               <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
                 <div className={tw(`flex flex-wrap`)}>
-                  <div
-                    role="button"
-                    aria-hidden="true"
-                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/regulations-in-virtual_wallets`)}
-                  >
-                    <img
-                      className={tw(`h-auto w-100 mb-4`)}
-                      src="/images/blog/regulations-in-virtual-wallets.jpg"
-                      alt="regulations-in-virtual-wallets"
-                    />
-                    <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>Regulations in virtual wallets</div>
-                    </div>
-                  </div>
-
-                  <div
-                    role="button"
-                    aria-hidden="true"
-                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/why-implement-an-ITSM-strategy`)}
-                  >
-                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/itsm.jpg" alt="logo" />
-                    <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>Why implement an ITSM strategy?</div>
-                    </div>
-                  </div>
-
-                  <div
-                    role="button"
-                    aria-hidden="true"
-                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/Automation-a-fundamental-tool-for-your-Company`)}
-                  >
-                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/automation.jpg" alt="logo" />
-                    <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>
-                        Automation, a fundamental tool for your Company.
+                  {posts
+                    .sort((a, b) => {
+                      const date1 = new Date(b.frontmatter.date);
+                      const date2 = new Date(a.frontmatter.date);
+                      return date1.getTime() - date2.getTime();
+                    })
+                    .map(({ slug, frontmatter }) => (
+                      <div
+                        role="button"
+                        aria-hidden="true"
+                        className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
+                        onClick={() => goToBlogDetails(`/blog/${slug}`)}
+                      >
+                        <img
+                          className={tw(`h-auto w-100 mb-4`)}
+                          src={frontmatter.socialImage}
+                          alt="regulations-in-virtual-wallets"
+                        />
+                        <div className={tw(`flex items-center mb-6`)}>
+                          <div className={tw(`text-l hover:underline`)}>{frontmatter.title}</div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div
-                    role="button"
-                    aria-hidden="true"
-                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/devops`)}
-                  >
-                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/devops.jpg" alt="logo" />
-                    <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>Avoid obstacles between IT teams with DevOps</div>
-                    </div>
-                  </div>
-
-                  <div
-                    role="button"
-                    aria-hidden="true"
-                    className={tw(`w-full md:w-1/3 p-8 cursor-pointer`)}
-                    onClick={() => goToBlogDetails(`/blog/virtual-wallets`)}
-                  >
-                    <img className={tw(`h-auto w-100 mb-4`)} src="/images/blog/wallet.jpeg" alt="logo" />
-                    <div className={tw(`flex items-center mb-6`)}>
-                      <div className={tw(`text-l hover:underline`)}>Virtual wallets: the key to B2B commerce</div>
-                    </div>
-                  </div>
+                    ))}
                 </div>
               </div>
             </div>
