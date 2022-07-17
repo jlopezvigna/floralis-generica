@@ -20,18 +20,6 @@ const trailsText = css`
   overflow: hidden;
 `;
 
-// const trailsText > div = css`
-//   padding-right: 0.05em;
-//   overflow: hidden;
-// `
-
-const container = css`
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-`;
-
 const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
