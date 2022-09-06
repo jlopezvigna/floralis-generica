@@ -23,6 +23,7 @@ Through a process called representation, the merchant must present evidence that
 ### Who has the advantage in a fraud situation?
 
 For cardholders, requesting a chargeback has few disadvantages, even if they have to stretch the truth to justify it to the bank. Usually, in the worst case, the merchant successfully represents the charge and does not recover the money from him.
+
 Smart merchants can blacklist a cardholder from shopping with them again, but the consequences are rarely harsher than that. While banks sometimes close accounts that repeatedly abuse the dispute process, criminal prosecution for credit card dispute fraud is rare.
 
 ## How to prevent fraud?
@@ -34,7 +35,7 @@ Among the measures that can be taken in these processes are:
 - Obtaining the client's IP address: with it you can limit the locations that will allow new transactions to be made from strange locations.
 - Obtaining and automatically comparing data with the help of the database of the entity in charge of generating a national registry of citizens in your country.
 - Proof of life that corroborates that the person making the transaction is who they say they are.
-- [KYC](https://www.investopedia.com/terms/k/knowyourclient.asp){target="\_blank"}: it is a practice that allows verifying the identity of customers in compliance with legal requirements and regulations.
+- [KYC](https://www.investopedia.com/terms/k/knowyourclient.asp){target="_blank"}: it is a practice that allows verifying the identity of customers in compliance with legal requirements and regulations.
 
 Another complementary measure is to blacklist people with a history of previous scams, meaning orders from them will never be accepted in the future. At least that way, they can't attack you a second time.
 
@@ -48,8 +49,8 @@ These chargebacks can be a struggle and you win if you have evidence that the ba
 
 In addition, collecting evidence and filing chargeback statements requires considerable time and effort, time that most merchants would prefer to spend on their core business operations.
 
-To avoid these chargebacks it is essential to understand their origin. At [Floralis](https://floralisgenerica.com/){target="\_blank"} we specialize in this type of solutions, giving e-commerce the advantage in these harmful processes.
+To avoid these chargebacks it is essential to understand their origin. At [Floralis](https://floralisgenerica.com/){target="_blank"} we specialize in this type of solutions, giving e-commerce the advantage in these harmful processes.
 
 Our team has the know-how to conduct the proper analysis and can help you determine what type of dispute fraud you're dealing with and how to effectively prevent it.
 
-If you want to protect your e-commerce from these risks, [contact us!](https://floralisgenerica.com/){target="\_blank"} We will help you create a prevention and contingency plan.
+If you want to protect your e-commerce from these risks, [contact us!](https://floralisgenerica.com/){target="_blank"} We will help you create a prevention and contingency plan.
