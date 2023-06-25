@@ -8,8 +8,8 @@ const GetInTouch = () => (
         <div className={tw(`py-8 px-6 md:px-0 lg:flex-shrink-1`)}>
           <h2 className={tw(`text-4xl lg:text-7xl font-bold text-secondary lg:mb-6`)}>Get in Touch</h2>
           <p className={tw(`text-base leading-6 text-gray-500 mb-2`)}>Let us know how we can help.</p>
-          <a className={tw(`text-xl hover:underline text-primary-light`)} href="mailto:info@expertice.com.ar">
-            hello@floralisgenerica.com
+          <a className={tw(`text-xl hover:underline text-primary-light`)} href="mailto:info@floralisgenerica.com">
+            info@floralisgenerica.com
           </a>
         </div>
         <div className={tw(`lg:flex-grow-1 lg:-mt-10`)}>
