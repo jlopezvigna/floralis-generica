@@ -2,8 +2,8 @@
 title: 'Why implement an ITSM strategy?'
 metaTitle: 'Why implement an ITSM strategy?'
 metaDesc: 'The management of business services in technology has become a very important factor that provides differential value both to the organizations that implement it and to their direct consumers'
-socialImage: /images/blog/itsm.jpg
-socialBannerImage: /images/blog/itsm-banner.png
+storyImage: /images/blog/itsm.jpg
+articleImage: /images/blog/itsm.jpg
 url: why-implement-an-ITSM-strategy
 date: '2022-07-01'
 ---

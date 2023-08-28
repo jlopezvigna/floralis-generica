@@ -2,8 +2,8 @@
 title: 'Fraud prevention in credit card disputes in e-commerce'
 metaTitle: 'Fraud prevention in credit card disputes in e-commerce'
 metaDesc: 'Many credit card surrenders are caused by fraud. Read the blog to learn what to do after a blowout and how to prevent it.'
-socialImage: /images/blog/fraud.jpg
-# socialBannerImage: /images/blog/fraud-banner.png
+storyImage: /images/blog/fraud.jpg
+articleImage: /images/blog/fraud.jpg
 url: fraud-prevention-in-credit-card-disputes-in-e-commerce
 date: '2022-09-06'
 ---

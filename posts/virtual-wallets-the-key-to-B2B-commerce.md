@@ -2,8 +2,8 @@
 title: 'Virtual wallets: the key to B2B commerce'
 metaTitle: 'Virtual wallets: the key to B2B commerce'
 metaDesc: 'The use of virtual wallets has grown exponentially among consumers. They allow multiple transactions from the cell phone.'
-socialImage: /images/blog/wallet.jpeg
-socialBannerImage: /images/blog/wallet-banner.png
+storyImage: /images/blog/wallet.jpeg
+articleImage: /images/blog/wallet.jpeg
 url: virtual-wallets-the-key-to-B2B-commerce
 date: '2022-04-13'
 ---
@@ -13,6 +13,7 @@ As we know, the use of virtual wallets has grown exponentially among consumers i
 Now, it's time to analyze: How can a virtual wallet grow my business? If you are looking to generate higher profits in your company, keep reading this blog.
 
 ## Greater financial inclusion
+
 Currently, progress towards financial inclusion in the world has grown considerably. Without a doubt, the offer of mobile financial services has been the technology industry's contribution to this progress.
 
 Wallets are an excellent cross-platform proposition. It has become an ideal option for the use of mobile money, both for users with bank accounts and for those without access to traditional financial services.
@@ -20,6 +21,7 @@ Wallets are an excellent cross-platform proposition. It has become an ideal opti
 This situation is repeated in B2B commerce, which is why virtual wallets will help your unbanked customers to access financial services that they would otherwise not have access to.
 
 ## What are the advantages of including a virtual wallet in your company?
+
 Your business system will benefit from the incorporation of virtual wallets, you will be able to access different benefits. For example: receive payments through the application, without maintenance costs, opening or sales commissions, in addition to having the money immediately. In other words, it is possible to access your profit immediately without the need to wait days for your payments to be released.
 
 If the above was not enough for you to decide to get a virtual wallet in your company, continue reading and find out more benefits:
@@ -33,9 +35,11 @@ If the above was not enough for you to decide to get a virtual wallet in your co
 ![wallet](/images/blog/wallet-banner.png){.banner}
 
 ## Your customers, your brand ambassadors
+
 We want to emphasize that virtual wallets are an effective tool to achieve greater customer loyalty. Since, through the facilities provided, it is possible to strengthen the commercial relationship. In this way, your customers will become ambassadors of your brand, helping to increase your company's income. Remember that usually a returning customer spends a higher average amount of money on products and services, compared to a new one.
 
 ## What should you take into account when obtaining a virtual wallet for your company?
+
 The fundamental competitive advantages consist of the agility that virtual wallets provide compared to traditional systems and the improvement of the customer experience.
 
 [Fintech](https://builtin.com/fintech){target="_blank"} companies are revolutionizing the user experience in financial services, with greater customer-centricity and the use of new technologies. Through their technological innovations, these types of companies are optimizing the customer experience regarding financial services. They use customer data to offer personalized solutions and, at the same time, fast digital services available 24/7 through any type of device.
@@ -45,6 +49,7 @@ The chosen platforms must be fast and reliable enough not to lose time or money 
 Similarly, it is extremely necessary that they have the development of security functions, such as fingerprint scanning and fraud protection solutions.
 
 ## Conclusions
+
 Virtual wallets are here to stay. This is why, if you haven't already done so, it is essential that you start evaluating incorporating them into your company. Make sure you have a business partner who understands your company, supports you and offers you a personalized solution.
 
 At Floralis we create cross-platform and native applications (iOS, Android, Web) with superior User Interface and Experience (UI/UX) designs, social network functionality (Whatsapp, Facebook Messenger) and automatic notifications for transactions.

@@ -2,26 +2,30 @@
 title: 'Avoid obstacles between IT teams with DevOps'
 metaTitle: 'Avoid obstacles between IT teams with DevOps'
 metaDesc: 'DevOps represents a philosophy based on automation and collaboration with the main objective of delivering high business value. This process involves legacy infrastructures with newer ones built in the cloud.'
-socialImage: /images/blog/devops.jpg
-socialBannerImage: /images/blog/devops-banner.png
+storyImage: /images/blog/devops.jpg
+articleImage: /images/blog/devops.jpg
 url: avoid-obstacles-between-IT-teams-with-DevOps
 date: '2022-05-23'
 ---
+
 DevOps represents a philosophy based on automation and collaboration with the main objective of delivering high business value. This process involves legacy infrastructures with newer ones built in the cloud.
 
 Below we will tell you what this practice specifically consists of and what are the benefits of implementing it in your technology team.
 
 ## What is DevOps?
+
 DevOps is a set of practices that bring together software development and IT operations. Its goal is to speed up the software development lifecycle and provide continuous high-quality delivery.
 
 It is possible to achieve this goal by optimizing response times through agile tools and methodologies. The point is to improve the creation process from when an idea is born until it goes from development to implementation. In this way, the value for the customer and the users increases remarkably because the delivery becomes faster without losing quality.
 
 ## The advantages of applying DevOps in your company
+
 This framework brings multiple benefits to those teams that implement it.
 
 ![Benefits of implementing DevOps](/images/blog/devops-banner.png){.banner}
 
 ## What are agile methodologies?
+
 Agile methodologies allow you to quickly adapt the development of an application as changes and new needs arise. In addition, they encourage teamwork, responsibility and self-organization. Thus, the development team can base its work on the needs of the client in order to build a custom application.
 
 All those companies that want to make a difference in their sector must master them, as they will end up being used in most companies due to their numerous advantages.
@@ -53,6 +57,7 @@ It is a methodology focused on communication, feedback and reuse of the develope
 The combination of this framework with Scrum provides great control over development and a more effective implementation.
 
 ## DevOps: our added value
+
 At Floralis we consider the DevOps methodology as a way to address the culture, design and automation of platforms in order to offer services and products with high added value.
 
 If you need help to optimize the development processes of your IT team, we invite you to [contact us](https://floralisgenerica.com/){target="_blank"}. We will respond as soon as possible to tell you how our experts can become the support your company needs.

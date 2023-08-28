@@ -2,8 +2,8 @@
 title: 'Automation, a fundamental tool for your Company.'
 metaTitle: 'Automation, a fundamental tool for your Company.'
 metaDesc: 'As we already know, automating the tasks of an organization consists of using technology to carry out certain operations without the need for human assistance.'
-socialImage: /images/blog/automation.jpg
-socialBannerImage: /images/blog/automation-banner.png
+storyImage: /images/blog/automation.jpg
+articleImage: /images/blog/automation.jpg
 url: Automation-a-fundamental-tool-for-your-Company
 date: '2022-06-07'
 ---
@@ -15,6 +15,7 @@ The digital transformation allowed us to move towards an automatic approach. Now
 Do you know the advantages of having these processes in your organization? Continue reading the article to know more.
 
 ## Automation in your company
+
 Automation can be embedded and applied to network, infrastructure, cloud readiness, standard operating environments (SOEs), and even application deployment and configuration management.
 
 ![Advantages of automation in your company](/images/blog/automation-banner.png){.banner}
@@ -32,6 +33,7 @@ Business automation is about coordinating business process management (BPM) and 
 Digital transformation is the key strategy to succeed in today's market environment and requires partnership between business and IT leaders.
 
 ### Business Process Management (BPM)
+
 A business process is a set of activities that help a business achieve a specific goal. On the other hand, BPM is the practice with which processes are modeled, analyzed and optimized in an integral way. It applies to constant or predictable tasks and processes, as well as those that are often repeated.
 
 BPM will allow you to evaluate your business processes to find ways to improve efficiency as well as reduce costs and errors.
@@ -64,9 +66,10 @@ Customer service is becoming more and more automated. Today it is very common to
 
 ### Increase productivity
 
-Another benefit of automation is that it increases competitiveness in the market. Thanks to this new paradigm, it is possible to provide a more efficient response to business needs. This is achieved from the IT area with the automation in the deployment of environments, the updating of applications and infrastructure monitoring. .
+Another benefit of automation is that it increases competitiveness in the market. Thanks to this new paradigm, it is possible to provide a more efficient response to business needs. This is achieved from the IT area with the automation in the deployment of environments, the updating of applications and infrastructure monitoring.
 
 ## Disadvantage of automation in your company
+
 One of the main problems is the cost. Designing an effective automation solution costs time and energy. Therefore, having an internal team dedicated to automation could be cumbersome.
 
 On the other hand, the scope may be affected. For all implementations there are limits or spaces where it is not enough to automate. The effectiveness and safety of automation depend on how it is implemented.
@@ -74,6 +77,7 @@ On the other hand, the scope may be affected. For all implementations there are 
 Even automation can be tied to planned obsolescence. Once the automated process is put into operation, it is likely that the applied technology will not meet the objectives or will be obsolete in the short term.
 
 ## Automation at your fingertips
+
 How to ensure that the planned obsolescence, the cost, and the scope of your project do not get in the way of your automation strategy? With a team of experts by your side.
 
 We can advise you on this paradigm shift to make your organization more efficient. Floralis will not only meet the basic needs, but will try to understand your business thoroughly to develop the solution that best benefits your company. Our solutions, services, and training programs give you the control you need to automate your business, focusing on innovation.

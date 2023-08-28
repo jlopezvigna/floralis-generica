@@ -86,7 +86,7 @@ export default function BlogList({ posts }: { posts: [any] }) {
                       >
                         <img
                           className={tw(`h-auto w-100 mb-4`)}
-                          src={frontmatter.socialImage}
+                          src={frontmatter.storyImage}
                           alt="regulations-in-virtual-wallets"
                         />
                         <div className={tw(`flex items-center mb-6`)}>

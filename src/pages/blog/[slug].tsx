@@ -73,7 +73,7 @@ const layoutFormat = css`
   }
 `;
 
-const socialImage = css`
+const articleImage = css`
   height: 300px;
   width: 100%;
   display: block;
@@ -127,8 +127,8 @@ export default function BlogPage({ frontmatter, content }: { frontmatter: any; c
           <main>
             <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
               <div className={tw(`container mx-auto px-6 p-6 bg-white`)}>
-                <div className={tw(socialImage)}>
-                  <Image src={frontmatter.socialImage} width="100%" height="100%" alt="Brand logo" />
+                <div className={tw(articleImage)}>
+                  <Image src={frontmatter.articleImage} width="100%" height="100%" alt="Brand logo" />
                 </div>
 
                 <div className={tw(`my-6`)}>

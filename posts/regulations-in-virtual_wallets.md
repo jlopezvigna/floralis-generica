@@ -2,8 +2,8 @@
 title: 'Regulations in virtual wallets'
 metaTitle: 'Regulations in virtual wallets'
 metaDesc: 'The blog will tell you about the regulations in force in the region and how we operate in Floralis to guarantee an appropriate development'
-socialImage: /images/blog/regulations-in-virtual-wallets.jpg
-socialBannerImage: /images/blog/regulations-in-virtual-wallets-banner.png
+storyImage: /images/blog/regulations-in-virtual-wallets.jpg
+articleImage: /images/blog/regulations-in-virtual-wallets.jpg
 url: regulations-in-virtual_wallets
 date: '2022-07-07'
 ---
