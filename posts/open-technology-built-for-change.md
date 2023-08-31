@@ -22,7 +22,7 @@ We are convinced that we will be able to promote and develop solutions that help
 
 At Floralis Generica, we have a specialized team with extensive experience focused on offering solutions with Red Hat technology, based on its three technological pillars and its entire product portfolio: [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux){target="_blank"}, [Red Hat Ansible Automation Platform (AAP)](https://www.redhat.com/en/technologies/management/ansible){target="_blank"} and [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift){target="_blank"}.
 
-![RedHat Pillars](/images/blog/redhat-3-pillars.png){.banner}
+![RedHat Pillars](/images/blog/red-hat-pillars.jpeg){.banner}
 
 ## What Does I mean to be a Red Hat Partner?
 
